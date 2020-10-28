@@ -29,7 +29,7 @@ export default function App() {
     return (
         <View style={styles.container}>
             <View style={{flexDirection: 'row', justifyContent: "space-between"}}>
-                <Text style={{marginVertical: 30, fontWeight: 400, fontSize: 20}}>{title}</Text>
+                <Text style={{marginVertical: 30, fontSize: 20}}>{title}</Text>
                 {direction === 'left'
                     ? <Image style={{width: 80, height: 40, marginVertical: 30}} source={require('./assets/left.png')}/>
                     : null}
@@ -43,6 +43,7 @@ export default function App() {
                 onPress={handlePress}
                 title="Choose"
                 color={'hsl(120, 40%, 30%)'}
+                disabled={direction ? true : false}
             />
         </View>
     );

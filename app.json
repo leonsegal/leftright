@@ -1,5 +1,6 @@
 {
   "expo": {
+    "description": "Not sure which way to turn on your quarantine walk? Fear not, all your worries are now over!!",
     "name": "left-right",
     "slug": "left-right",
     "platforms": [
@@ -22,7 +23,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
     }
   }
 }
